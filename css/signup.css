@@ -1,41 +1,48 @@
-.login__container {
+.signup__container {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
     align-items: center;
-
-    height: 90vh;
+    justify-content: center;
+    height: 100vh;
 }
 
-.login__form {
+.signup__form {
     display: flex;
     flex-flow: column wrap;
 
     padding: 40px;
 
-    width: 28vw;
-    max-width: 400px;
+    width: 37vw;
+    max-width: 550px;
     min-width: 400px;
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     border-radius: 2%;
 }
 
-.login__btn {
+.signup__name {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
-
-    margin-top: 13px;
+    gap: 15px;
 }
 
-.login__signUp-btn {
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 1.5px black;
-    font-weight: bold;
+.signup__left {
+    flex: 1.2
+}
+
+.signup__right {
+    flex: .8;
+}
+
+.signup__fname {
+    width: 100%;
+}
+
+.signup__lname {
+    width: 100%;
 }
 
 .btn-primary {
-    width: 10em;
     margin-top: 13px;
 }

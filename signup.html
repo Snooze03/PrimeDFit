@@ -5,10 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/signup.css">
 </head>
 
 <body>
-
+    <div class="signup__container">
+        <h1 class="app-header">PrimeDFit</h1>
+        <div class="signup__form">
+            <p class="form-header">Sign Up</p>
+            <p class="form-subtext">start your AI driven fitness journey</p>
+            <form action="">
+                <div class="signup__name">
+                    <div class="form-group signup__left">
+                        <label for="fName">First Name</label>
+                        <input class="signup__fname" type="text">
+                    </div>
+                    <div class="form-group signup__right">
+                        <label for="lName">Last Name</label>
+                        <input class="signup__lname" type="text">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text">
+                </div>
+            </form>
+            <button class="btn-primary">Continue</button>
+        </div>
+    </div>
 </body>
 
 </html>
