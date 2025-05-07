@@ -1,0 +1,58 @@
+/* === BUTTONS === */
+.btn-primary {
+    padding: 3.5px;
+    background-color: #FFBD59;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* === END BUTTONS === */
+
+/* === FORMS === */
+.form-group {
+    display: flex;
+    flex-flow: column wrap;
+
+    gap: 15px;
+}
+
+.form-group input {
+    background-color: white;
+    border: solid 2px rgb(226, 226, 226);
+    border-radius: 8px;
+    height: 33px;
+    margin-bottom: 15px;
+}
+
+/* === END FORMS === */
+
+/* === HEADINGS === */
+.app-header {
+    color: #FFBD59;
+    margin: 15px;
+
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.form-header {
+    font-weight: bolder;
+    font-size: x-large;
+
+    padding-bottom: 5px;
+}
+
+/* === END HEADINGS === */
+
+/* === TEXT === */
+.form-subtext {
+    color: rgb(150, 150, 150);
+    border-bottom: solid 2.5px rgb(226, 226, 226);
+
+    padding-bottom: 13px;
+    margin-bottom: 25px;
+
+}
+
+/* === END TEXT === */
