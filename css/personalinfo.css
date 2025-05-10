@@ -1,0 +1,35 @@
+.info__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.info__form {
+    display: flex;
+    flex-flow: column wrap;
+
+    padding: 40px;
+
+    width: 55vw;
+    max-width: 550px;
+    min-width: 400px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 2%;
+}
+
+.info__form-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.info__form-left {
+    flex: 1;
+}
+
+.info__form-right {
+    flex: 1;
+}
