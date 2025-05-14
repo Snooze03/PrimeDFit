@@ -12,15 +12,21 @@
 
     padding: 40px;
 
-    width: 55vw;
-    max-width: 550px;
-    min-width: 400px;
+    width: 30vw;
+    max-width: 450;
+    min-width: 380px;
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     border-radius: 2%;
 }
 
 .info__form-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+}
+
+.info__form-rows {
     display: flex;
     flex-flow: row wrap;
     gap: 15px;
