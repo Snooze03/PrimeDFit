@@ -1,7 +1,8 @@
 /* Main Container */
 .container {
     padding: 16px;
-    padding-bottom: 80px; /* Space for bottom nav */
+    padding-bottom: 80px;
+    /* Space for bottom nav */
     max-width: 800px;
     margin: 0 auto;
 }
@@ -167,64 +168,4 @@
 /* Expanded/Collapsed States */
 .workout-card:not(.expanded) .workout-details {
     display: none;
-}
-
-/* Bottom Navigation */
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FFBD59;
-    border-top: 1px solid #ddd;
-    height: 65px;
-    z-index: 1000;
-}
-
-.nav-btn {
-    background: none;
-    border: none;
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #888;
-    font-size: 12px;
-    cursor: pointer;
-    flex: 1;
-    padding: 8px 0;
-    transition: color 0.3s;
-    text-decoration: none;
-}
-
-.nav-btn img,
-.nav-btn svg {
-    width: 22px;
-    height: 22px;
-    margin-bottom: 4px;
-    filter: grayscale(100%) brightness(0.5);
-    transition: filter 0.3s;
-}
-
-.nav-btn.active,
-.nav-btn:hover {
-    color: #995c00;
-}
-
-.nav-btn.active svg path,
-.nav-btn.active svg circle,
-.nav-btn:hover svg path,
-.nav-btn:hover svg circle {
-    stroke: #995c00;
-}
-
-.nav-btn.active img,
-.nav-btn.active svg,
-.nav-btn:hover img,
-.nav-btn:hover svg {
-    filter: none;
 }
