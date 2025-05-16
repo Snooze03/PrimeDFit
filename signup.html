@@ -17,7 +17,7 @@
         <div class="signup__form">
             <p class="form-header">Sign Up</p>
             <p class="form-subtext">start your AI driven fitness journey</p>
-            <form action="">
+            <form action="" class="signup__form-inputFields">
                 <div class="signup__name">
                     <div class="form-group signup__left">
                         <label for="fName">First Name</label>
@@ -37,7 +37,10 @@
                     <input type="text">
                 </div>
             </form>
-            <button class="btn-primary">Continue</button>
+
+            <!-- To fix the button gap: fix this later with JS and put it back inside the form element -->
+            <button class="btn-primary" onclick="window.location.href='personalinfo.html';"
+                style="margin-top: 25px;">Continue</button>
         </div>
     </div>
 </body>

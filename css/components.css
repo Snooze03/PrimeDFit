@@ -18,12 +18,13 @@
     gap: 15px;
 }
 
-.form-group input {
+.form-group input,
+select {
     background-color: white;
     border: solid 2px rgb(226, 226, 226);
     border-radius: 8px;
     height: 33px;
-    margin-bottom: 15px;
+    width: 100%;
 }
 
 /* === END FORMS === */
