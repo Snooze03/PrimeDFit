@@ -140,6 +140,10 @@
 }
 
 .delete-btn {
+    border: 1px solid #FF4D4D;
+    background-color: transparent;
+    color: #FF4D4D;
+    font-weight: 500;   
     flex: 1;
 }
 
