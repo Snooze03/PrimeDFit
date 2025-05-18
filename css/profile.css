@@ -8,16 +8,12 @@
     margin: auto auto;
 }
 
-.profile__container h1 {
-    margin-bottom: 15px;
-}
-
 .profile__card {
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
-    border-radius: 8px;
+    border-radius: 10px;
 
     padding: 15px;
 }
@@ -45,19 +41,11 @@
 
 /* === END PROFILE === */
 
-/* Progress Report */
-.report__container h2 {
-    color: #888;
-    margin: 15px 0 15px 0;
-}
-
+/* === Progress Report === */
 .report__card {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
-    border-radius: 8px;
-    padding: 15px;
-}
-
-.report__card-inputs {
+    border-radius: 10px;
+    padding: 30px;
     display: flex;
     flex-flow: column wrap;
     gap: 15px;
@@ -111,4 +99,69 @@
 
 .btn-primary {
     margin-top: 15px;
+}
+
+/* === END Progress Report === */
+
+/* === Previous Reports === */
+.report__container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.report {
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+
+.report__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report__exportButton {
+    padding: 3.5px 15px 3.5px 15px;
+    border-radius: 8px;
+
+    background-color: white;
+    border-color: rgba(255, 189, 89, 50%);
+    color: #E6AC53;
+
+    transition: color .3s ease-in, border-color .3s ease-out;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 20;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.report__exportButton:hover {
+
+    color: rgba(255, 189, 89, 80%);
+    border-color: #FFBD59;
+}
+
+.report__title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.report__date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
