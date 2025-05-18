@@ -13,13 +13,62 @@
 </head>
 
 <body>
-    <h1 class="header">Profile</h1>
-    <div class="container">
-        <div class="profile">
-            <img src="images/User-Circle--Streamline-Iconoir.png" alt="" class="profile__image">
-            <p class="profile__username">Snooze</p>
-            <p class="profile__pill">13 workouts</p>
+    <div class="profile__container">
+        <!-- Profile Section -->
+        <h1 class="app-header">Profile</h1>
+        <div class="profile__card">
+            <img src="images/User-Circle--Streamline-Iconoir.png" alt="" class="profile__card-image">
+            <div class="profile__text">
+                <p class="profile__user">Snooze</p>
+                <p class="profile__workouts">13 workouts</p>
+            </div>
         </div>
+        <!-- END Profile Section -->
+
+        <!-- Progress Report Section -->
+        <div class="report__container">
+            <h2>PROGRESS REPORT</h2>
+            <div class="report__card">
+                <div class="report__card-inputs">
+                    <!-- Date and Time Inputs -->
+                    <div class="form-group">
+                        <label for="report-interval">Report Interval</label>
+                        <input type="date" id="report-interval" name="report-interval">
+                    </div>
+                    <div class="form-group time">
+                        <label for="report-time">Time</label>
+                        <input type="time" id="report-time" name="report-time">
+                    </div>
+                    <!-- END Date and Time Inputs -->
+
+                    <!-- Report Type -->
+                    <p>Report Type</p>
+                    <div class="report__card-buttonGroup">
+                        <div>
+                            <input type="radio" id="type-short" name="selection" value="type-short">
+                            <label for="type-short" class="report__card-button">Short
+                                <span class="report__card-buttonAltText">
+                                    Brief overview of your progres
+                                </span>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="type-detailed" name="selection" value="type-detailed">
+                            <label for="type-detailed" class="report__card-button">Detailed
+                                <span class="report__card-buttonAltText">
+                                    In-depth analysis with recommendations
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- END Report Type -->
+
+                    <!-- Save Button -->
+                    <button class="btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+        <!-- END Progress Report Section -->
     </div>
 
 
@@ -70,7 +119,7 @@
             </svg>
             Nutrition
         </a>
-        <a href="#" class="nav-btn">
+        <a href="profile.html" class="nav-btn">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
