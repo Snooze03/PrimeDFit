@@ -82,7 +82,6 @@
 
 .report__card-button:hover {
     background-color: rgba(255, 189, 89, 30%);
-
     box-shadow: 0 0 5px rgba(255, 189, 89, 1)
 }
 
@@ -117,6 +116,13 @@
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
+
+    transition: background-color .3s ease-in, box-shadow .3s ease-out;
+}
+
+.report:hover {
+    background-color: rgba(255, 189, 89, 30%);
+    box-shadow: 0 0 5px rgba(255, 189, 89, 1)
 }
 
 .report__header {
@@ -150,7 +156,6 @@
 }
 
 .report__exportButton:hover {
-
     color: rgba(255, 189, 89, 80%);
     border-color: #FFBD59;
 }
