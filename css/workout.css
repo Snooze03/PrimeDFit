@@ -7,6 +7,14 @@
     margin: 0 auto;
 }
 
+.add-exercise-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+
 /* Section Styling */
 .section {
     margin-bottom: 24px;
