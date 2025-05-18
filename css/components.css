@@ -6,6 +6,12 @@
     width: 100%;
     font-weight: bold;
     border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+}
+
+.btn-primary:hover {
+    background-color: rgb(250, 177, 67);
 }
 
 /* === END BUTTONS === */
