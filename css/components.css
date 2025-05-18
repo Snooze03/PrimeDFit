@@ -50,6 +50,11 @@ select {
     padding-bottom: 5px;
 }
 
+.section-title {
+    color: #888;
+    margin: 15px 0 15px 0;
+}
+
 /* === END HEADINGS === */
 
 /* === TEXT === */
