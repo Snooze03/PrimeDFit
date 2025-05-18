@@ -1,0 +1,64 @@
+/* === Header === */
+.view__container {
+    width: 600px;
+    margin: auto auto;
+}
+
+.view__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.view__header-btns {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.view__header-btns button {
+    width: 100px;
+    height: 35px;
+}
+
+/* === END Header === */
+.view__delete-btn {
+    color: rgba(255, 89, 89, 1);
+    background-color: white;
+    border-color: rgba(255, 89, 89, 70%);
+    border-radius: 10px;
+}
+
+/* === Date ===  */
+.date__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+.card {
+    /* padding: 30px; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card__title {
+    padding: 15px 30px 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(255, 189, 89, 15%);
+}
+
+.card__desc {
+    padding: 30px;
+    text-align: justify;
+}
