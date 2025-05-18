@@ -18,7 +18,7 @@ const workouts = [
         { sets: 3, name: "Seated Overhead press", equipment: "Dumbbell" },
         { sets: 3, name: "Arnold Press", equipment: "Dumbbell" },
         { sets: 3, name: "Cable Crossover", equipment: "Machine" },
-        { sets: 2, name: "Decline Bench Press   ", equipment: "Machine" }, 
+        { sets: 2, name: "Decline Bench Press", equipment: "Machine" }, 
     ]
   }
 ];
@@ -106,6 +106,7 @@ function renderWorkoutSection(containerId, workoutList) {
     // Start workout button
     card.querySelector(".start-btn")?.addEventListener("click", e => {
       e.stopPropagation(); // prevent toggle when clicking button
+      localStorage.setItem("activeWorkout", JSON.stringify(workout));
       window.location.href = "active-workout.html";
     });
 

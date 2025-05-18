@@ -8,6 +8,13 @@
     border-radius: 8px;
 }
 
+.btn-transparent {
+    padding: 3.5px;
+    background-color: transparent;
+    border: none;
+    
+}
+
 /* === END BUTTONS === */
 
 /* === FORMS === */

@@ -1,0 +1,183 @@
+/* Main Container */
+.active-workout-container {
+    padding: 16px;
+    padding-bottom: 80px; /* Space for bottom nav */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* Workout Header */
+.workout-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workout-title {
+    flex: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.done-btn {
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Exercise Container */
+.exercise-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* Exercise Card */
+.exercise-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e2e2;
+}
+
+.exercise-header {
+    margin-bottom: 12px;
+}
+
+.exercise-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.equipment {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Sets Table */
+.sets-table {
+    width: 100%;
+}
+
+.table-header {
+    display: flex;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.set-row {
+    display: flex;
+    padding: 8px 0;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.set-row.completed {
+    background-color: #FFE4B8;
+}
+
+.set-col {
+    width: 10%;
+    text-align: center;
+    font-weight: 600;
+    color: #FFBD59;
+}
+
+.previous-col {
+    width: 30%;
+    color: #888;
+}
+
+.kg-col, .reps-col {
+    width: 25%;
+    padding: 0 4px;
+}
+
+.check-col {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.check-circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #FFBD59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.set-row:not(.completed) .check-circle {
+    background-color: white;
+    border: 1px solid #e2e2e2;
+}
+
+.set-row:not(.completed) .check-circle svg {
+    display: none;
+    background-color: #FFBD59;
+}
+
+/* Cancel Button */
+.cancel-btn {
+    width: 100%;
+    background-color: #FFE4E4;
+    color: #FF5757;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.add-exercise-btn {
+    width: 100%;
+    background-color: #FFBD59;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 16px;
+}
