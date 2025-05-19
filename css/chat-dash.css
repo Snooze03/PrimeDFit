@@ -1,5 +1,6 @@
 .chat__container {
     padding: 16px;
+    margin-bottom: 25px;
     max-width: 600px;
 
     margin: auto auto;
