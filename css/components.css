@@ -55,6 +55,13 @@
     box-shadow: 0 0 10px rgb(255, 164, 164);
 }
 
+.btn-transparent {
+    padding: 3.5px;
+    background-color: transparent;
+    border: none;
+    
+}
+
 /* === END BUTTONS === */
 
 /* === FORMS === */
