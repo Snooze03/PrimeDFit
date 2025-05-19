@@ -6,6 +6,12 @@
     width: 100%;
     font-weight: bold;
     border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+}
+
+.btn-primary:hover {
+    background-color: rgb(250, 177, 67);
 }
 
 /* === END BUTTONS === */
@@ -32,7 +38,7 @@ select {
 /* === HEADINGS === */
 .app-header {
     color: #FFBD59;
-    margin: 15px;
+    margin-bottom: 15px;
 
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
@@ -42,6 +48,11 @@ select {
     font-size: x-large;
 
     padding-bottom: 5px;
+}
+
+.section-title {
+    color: #888;
+    margin: 15px 0 15px 0;
 }
 
 /* === END HEADINGS === */
