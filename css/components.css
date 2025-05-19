@@ -3,15 +3,56 @@
     padding: 3.5px;
     background-color: #FFBD59;
     border: none;
+
     width: 100%;
     font-weight: bold;
     border-radius: 8px;
+
     cursor: pointer;
+
     transition: background-color .3s ease-in;
 }
 
 .btn-primary:hover {
     background-color: rgb(250, 177, 67);
+}
+
+.btn-alt {
+    color: #E6AC53;
+    background-color: white;
+    border-color: rgba(255, 189, 89, 80%);
+    font-weight: bold;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-out, box-shadow .3s ease-out;
+}
+
+.btn-alt:hover {
+    color: #ffffff;
+    background-color: rgba(255, 189, 89, 1);
+    border-color: none;
+    box-shadow: 0 0 10px rgba(255, 189, 89, 80%)
+}
+
+.btn-delete {
+    color: rgba(255, 89, 89, 1);
+    background-color: white;
+    border-color: rgba(255, 89, 89, 1);
+    font-weight: bold;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: color .3s ease-in, background-color .3s, ease-in, border-color .3s ease-out, box-shadow .3s ease-out;
+}
+
+.btn-delete:hover {
+    color: white;
+    background-color: rgba(255, 89, 89, 1);
+    border-color: rgba(254, 74, 74, 0.9);
+    box-shadow: 0 0 10px rgb(255, 164, 164);
 }
 
 /* === END BUTTONS === */
