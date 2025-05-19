@@ -88,6 +88,24 @@
     
 }
 
+.send-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    gap: 4px;
+
+    background-color: #FFBD59;
+    border: none;
+
+    font-weight: bold;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color .3s ease-in;
+}
+
 .back-btn {
     background: none;
     border: none;
@@ -168,6 +186,14 @@ select {
 .section-title {
     color: #888;
     margin: 15px 0 15px 0;
+}
+
+.normal__title {
+    padding-left: 10px;
+    flex: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
 }
 
 /* === END HEADINGS === */
