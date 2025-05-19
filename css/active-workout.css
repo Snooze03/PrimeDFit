@@ -15,17 +15,8 @@
     margin-bottom: 20px;
 }
 
-.back-btn {
-    background: none;
-    border: none;
-    padding: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .workout-title {
+    padding-left: 10px;
     flex: 1;
     font-size: 24px;
     font-weight: 700;

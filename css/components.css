@@ -18,6 +18,11 @@
 }
 
 .btn-alt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    gap: 4px;
     color: #E6AC53;
     background-color: white;
     border-color: rgba(255, 189, 89, 80%);
@@ -36,7 +41,20 @@
     box-shadow: 0 0 10px rgba(255, 189, 89, 80%)
 }
 
+.btn-alt img {
+    transition: filter 0.3s ease-in;
+}
+
+.btn-alt:hover img {
+    filter: brightness(0) invert(1);
+}
+
 .btn-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    gap: 4px;
     color: rgba(255, 89, 89, 1);
     background-color: white;
     border-color: rgba(255, 89, 89, 1);
@@ -55,11 +73,29 @@
     box-shadow: 0 0 10px rgb(255, 164, 164);
 }
 
+.btn-delete img {
+    transition: filter 0s ease-in;
+}
+
+.btn-delete:hover img {
+    filter: brightness(0) invert(1);
+}
+
 .btn-transparent {
     padding: 3.5px;
     background-color: transparent;
     border: none;
     
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* === END BUTTONS === */
@@ -90,6 +126,10 @@ select {
 }
 
 .card__title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 4px;
     padding: 15px 30px 15px 30px;
     font-size: 18px;
     font-weight: 500;
