@@ -74,6 +74,33 @@ select {
     width: 100%;
 }
 
+/* === CARD === */
+.card {
+    /* padding: 30px; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card__title {
+    padding: 15px 30px 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(255, 189, 89, 15%);
+}
+
+.card__desc {
+    padding: 30px;
+    text-align: justify;
+}
+
+.card__list {
+    padding: 20px;
+    margin-left: 30px;
+}
+
+/* === END CARD === */
+
 /* === END FORMS === */
 
 /* === HEADINGS === */
