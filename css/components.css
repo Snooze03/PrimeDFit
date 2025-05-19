@@ -3,9 +3,56 @@
     padding: 3.5px;
     background-color: #FFBD59;
     border: none;
+
     width: 100%;
     font-weight: bold;
     border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color .3s ease-in;
+}
+
+.btn-primary:hover {
+    background-color: rgb(250, 177, 67);
+}
+
+.btn-alt {
+    color: #E6AC53;
+    background-color: white;
+    border-color: rgba(255, 189, 89, 80%);
+    font-weight: bold;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-out, box-shadow .3s ease-out;
+}
+
+.btn-alt:hover {
+    color: #ffffff;
+    background-color: rgba(255, 189, 89, 1);
+    border-color: none;
+    box-shadow: 0 0 10px rgba(255, 189, 89, 80%)
+}
+
+.btn-delete {
+    color: rgba(255, 89, 89, 1);
+    background-color: white;
+    border-color: rgba(255, 89, 89, 1);
+    font-weight: bold;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: color .3s ease-in, background-color .3s, ease-in, border-color .3s ease-out, box-shadow .3s ease-out;
+}
+
+.btn-delete:hover {
+    color: white;
+    background-color: rgba(255, 89, 89, 1);
+    border-color: rgba(254, 74, 74, 0.9);
+    box-shadow: 0 0 10px rgb(255, 164, 164);
 }
 
 .btn-transparent {
@@ -34,12 +81,39 @@ select {
     width: 100%;
 }
 
+/* === CARD === */
+.card {
+    /* padding: 30px; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card__title {
+    padding: 15px 30px 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(255, 189, 89, 15%);
+}
+
+.card__desc {
+    padding: 30px;
+    text-align: justify;
+}
+
+.card__list {
+    padding: 20px;
+    margin-left: 30px;
+}
+
+/* === END CARD === */
+
 /* === END FORMS === */
 
 /* === HEADINGS === */
 .app-header {
     color: #FFBD59;
-    margin: 15px;
+    margin-bottom: 15px;
 
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
 }
@@ -49,6 +123,11 @@ select {
     font-size: x-large;
 
     padding-bottom: 5px;
+}
+
+.section-title {
+    color: #888;
+    margin: 15px 0 15px 0;
 }
 
 /* === END HEADINGS === */
