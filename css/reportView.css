@@ -1,0 +1,47 @@
+/* === Header === */
+.view__container {
+    /* space for bottom nav */
+    padding: 16px;
+    padding-bottom: 80px;
+    width: 600px;
+    margin: auto auto;
+}
+
+.view__header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.view__header-btns {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.view__header-btns button {
+    width: 100px;
+    height: 35px;
+}
+
+
+/* === END Header === */
+
+/* === Date ===  */
+.date__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+.date {
+    font-weight: bold;
+}

@@ -1,0 +1,32 @@
+.chat__container {
+    padding: 16px;
+    max-width: 600px;
+
+    margin: auto auto;
+}
+
+.app-header {
+    margin-bottom: 0px;
+}
+
+.chat_subtext {
+    color: #888;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-primary {
+    margin: 25px 0px 25px 0px;
+}
+
+.chat__subTitle {
+    color: #888;
+    font-size: large;
+    font-weight: bold;
+
+    padding-bottom: 10px;
+    border-bottom: 2px solid #888;
+
+    margin-bottom: 25px;
+}

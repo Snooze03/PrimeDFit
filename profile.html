@@ -9,18 +9,105 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/profile.css">
 
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=vertical_align_bottom" />
     <title>PrimeDFit</title>
 </head>
 
 <body>
-    <h1 class="header">Profile</h1>
-    <div class="container">
-        <div class="profile">
-            <img src="images/User-Circle--Streamline-Iconoir.png" alt="" class="profile__image">
-            <p class="profile__username">Snooze</p>
-            <p class="profile__pill">13 workouts</p>
+    <div class="profile__container">
+        <!-- === Profile Section === -->
+        <h1 class="app-header">Profile</h1>
+        <div class="profile__card">
+            <img src="images/User-Circle--Streamline-Iconoir.png" alt="" class="profile__card-image">
+            <div class="profile__text">
+                <p class="profile__user">Snooze</p>
+                <p class="profile__workouts">13 workouts</p>
+            </div>
         </div>
-    </div>
+        <!-- === END Profile Section === -->
+
+        <!-- === Progress Report Section === -->
+        <h3 class="section-title">PROGRESS REPORT</h3>
+        <div class="report__card">
+            <!-- Date and Time Inputs -->
+            <div class="form-group">
+                <label for="report-interval">Report Interval</label>
+                <input type="date" id="report-interval" name="report-interval">
+            </div>
+            <div class="form-group">
+                <label for="report-time">Time</label>
+                <input type="time" id="report-time" name="report-time">
+            </div>
+            <!-- END Date and Time Inputs -->
+
+            <!-- === Report Type === -->
+            <p>Report Type</p>
+            <div class="report__card-buttonGroup">
+                <div>
+                    <input type="radio" id="type-short" name="selection" value="type-short">
+                    <label for="type-short" class="report__card-button">Short
+                        <span class="report__card-buttonAltText">
+                            Brief overview of your progres
+                        </span>
+                    </label>
+                </div>
+                <div>
+                    <input type="radio" id="type-detailed" name="selection" value="type-detailed">
+                    <label for="type-detailed" class="report__card-button">Detailed
+                        <span class="report__card-buttonAltText">
+                            In-depth analysis with recommendations
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <!-- === END Report Type === -->
+
+            <button class="btn-primary">Save</button>
+        </div>
+
+        <!-- === Previous Report === -->
+        <h3 class="section-title">PREVIOUS REPORTS</h3>
+        <div class="report__container">
+            <div class="report" data-href="reportView.html">
+                <div class="report__header">
+                    <p class="report__title">Report #1</p>
+                    <button class="btn-alt">
+                        <span class="material-symbols-outlined">
+                            vertical_align_bottom
+                        </span>Export</button>
+                </div>
+                <p class="report__date">March 12 2025</p>
+                <p class="report__description">Great progress on your strength goals! Your bench press has improved
+                    by 10% and you've been consistent with your workouts.</p>
+            </div>
+            <div class="report" data-href="reportView.html">
+                <div class="report__header">
+                    <p class="report__title">Report #2</p>
+                    <button class="btn-alt">
+                        <span class="material-symbols-outlined">
+                            vertical_align_bottom
+                        </span>Export</button>
+                </div>
+                <p class="report__date">Feb 22 2025</p>
+                <p class="report__description">Great progress on your strength goals! Your bench press has improved
+                    by 10% and you've been consistent with your workouts.</p>
+            </div>
+            <div class="report" data-href="reportView.html">
+                <div class="report__header">
+                    <p class="report__title">Report #3</p>
+                    <button class="btn-alt">
+                        <span class="material-symbols-outlined">
+                            vertical_align_bottom
+                        </span>Export</button>
+                </div>
+                <p class="report__date">Jan 2 2025</p>
+                <p class="report__description">Great progress on your strength goals! Your bench press has improved
+                    by 10% and you've been consistent with your workouts.</p>
+            </div>
+        </div> <!-- === END Previous Report === -->
+    </div> <!-- === END Profle Container === -->
 
     <!-- Bottom Navigation -->
     <div class="bottom-nav">
@@ -36,7 +123,7 @@
             <img src="images/History.png" stroke="#995c00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             History
         </a>
-        <a href="#" class="nav-btn">
+        <a href="chat-dash.html" class="nav-btn">
             <img src="images/Chat.png" stroke="#995c00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             Chat
         </a>
@@ -49,5 +136,8 @@
             Profile
         </a>
     </div>
+
+    <!-- For card click event -->
+    <script src="javascript/profile.js"></script>
 </body>
 </html>
