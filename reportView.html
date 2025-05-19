@@ -16,21 +16,42 @@
 <body>
     <div class="view__container">
         <div class="view__header">
-            <h1 class="app-header">Report #1</h1>
+            <button class="back-btn" onclick="history.back()">
+                <img src="images/Left.png" alt="Back">
+            </button>
+            <h1 class="report__title">Report #1</h1>
             <div class="view__header-btns">
-                <button class="btn-delete">Delete</button>
-                <button class="btn-alt">Export</button>
+                <button class="btn-delete">
+                    <img src="images/Delete.png"></img>
+                    Delete
+                </button>
+                <button class="btn-alt">
+                    <img src="images/Download.png"></img>
+                    Export
+                </button>
             </div>
         </div>
 
         <div class="date__container">
-            <p>arrow</p>
-            <p class="date">March 12 2025</p>
-            <p>arrow</p>
+            <button class="nav-button left-button">
+                <img src="images/Nav-Arrow-Left.png">
+            </button>
+
+            <div class="center-content">
+                <img src="images/Calendar.png" alt="Calendar" class="calendar-icon">
+                <span class="date">May 19, 2025</span>
+            </div>
+
+            <button class="nav-button right-button">
+                <img src="images/Nav-Arrow-Right.png">
+            </button>
         </div>
 
         <div class="card">
-            <p class="card__title">Progress Report</p>
+            
+            <p class="card__title">
+                <img class="card-icon" src="images/Progress.png"></img>
+                Progress Report</p>
             <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
                 vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
                 diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
@@ -38,7 +59,9 @@
                 torquent per conubia nostra inceptos himenaeos.</p>
         </div>
         <div class="card">
-            <p class="card__title">Workout Feedback</p>
+            <p class="card__title">
+                <img class="card-icon" src="images/Gym.png"></img>
+                Workout Feedback</p>
             <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
                 vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
                 diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
@@ -46,7 +69,9 @@
                 torquent per conubia nostra inceptos himenaeos.</p>
         </div>
         <div class="card">
-            <p class="card__title">Nutrition Feedback</p>
+            <p class="card__title">
+                <img class="card-icon" src="images/Nutrition-Yellow.png"></img>
+                Nutrition Feedback</p>
             <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
                 vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
                 diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
@@ -54,7 +79,9 @@
                 torquent per conubia nostra inceptos himenaeos.</p>
         </div>
         <div class="card">
-            <p class="card__title">Key Take Aways</p>
+            <p class="card__title">
+                <img class="card-icon" src="images/Idea.png"></img>
+                Key Take Aways</p>
             <ol class="card__list">
                 <li>Lorem ipsu dolor sit amet consectetur</li>
                 <li>Lorem ipsu dolor sit amet consectetur</li>

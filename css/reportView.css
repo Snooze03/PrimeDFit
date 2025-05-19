@@ -31,17 +31,52 @@
 
 /* === Date ===  */
 .date__container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distributes outer buttons to edges */
 
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
 
-    margin-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+/* Style for the left and right buttons */
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Center container for icon + date */
+.center-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Optional: Icon size */
+.calendar-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .date {
     font-weight: bold;
+}
+
+.report__title {
+    padding-left: 10px;
+    flex: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.card-icon {
+    font-weight: bold;
+    margin-right: 10px;
+    gap: 8px;
 }
