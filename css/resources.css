@@ -1,0 +1,42 @@
+.resources__container {
+    padding: 16px;
+    padding-bottom: 80px;
+
+    max-width: 600px;
+    margin: auto auto;
+}
+
+.resources__option {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    padding: 15px 55px;
+    margin-bottom: 25px;
+
+    background-color: rgba(255, 189, 89, 20%);
+    border-radius: 10px;
+}
+
+.resources__option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.resources__option-btn {
+    padding: 5px 25px;
+    border-radius: 8px;
+    transition: background-color .3s ease-in, box-shadow .3s ease-out;
+}
+
+.resources__option-btn:hover {
+    background-color: rgba(255, 189, 89, 30%);
+    box-shadow: 0 0 5px rgba(255, 189, 89, 1)
+}
+
+.resources__option input[type="radio"]:checked+.resources__option-btn {
+    background-color: rgba(255, 189, 89, 50%);
+    border-color: rgba(255, 189, 89, 80%);
+}

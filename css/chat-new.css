@@ -1,0 +1,99 @@
+.chat__container {
+    /* Space for bottom nav */
+    padding: 16px;
+    padding-bottom: 80px;
+    max-width: 600px;
+    margin: auto auto;
+}
+
+.chat__box {
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.chat__topheader {
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: start;
+}
+
+.chat__back-arrow {
+    margin-right: 15px;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    padding: 0;
+}
+
+.chat__header {
+    border-bottom: 2px solid #888;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.chat__coach {
+    font-weight: bold;
+    font-size: large;
+}
+
+.chat__subtext {
+    color: #888;
+}
+
+/* === Chat Area === */
+.chat__area {
+    display: flex;
+    flex-direction: column;
+    /* Stack messages vertically */
+    gap: 15px;
+    /* padding: 15px; */
+}
+
+.message {
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 80%;
+    /* Prevent messages from taking up the whole width */
+}
+
+.chat__bot-box {
+    color: white;
+    background-color: #888;
+    align-self: flex-start;
+    /* Align to the left for bot messages */
+}
+
+.chat__user-box {
+    color: white;
+    background-color: hsl(36, 100%, 69%);
+    align-self: flex-end;
+    /* Align to the right for user messages */
+}
+
+.chat__message-footer {
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 2px solid #888;
+
+    padding: 15px 15px 0 15px;
+    margin-top: 15px;
+}
+
+#chat__txtbox {
+    width: 100%;
+    margin-right: 15px;
+
+    background-color: white;
+    border: solid 2px rgb(226, 226, 226);
+    border-radius: 8px;
+    height: 33px;
+}
+
+.btn-primary {
+    max-width: 50px;
+}
