@@ -1,5 +1,8 @@
 /* === Header === */
 .view__container {
+    /* space for bottom nav */
+    padding: 16px;
+    padding-bottom: 80px;
     width: 600px;
     margin: auto auto;
 }
@@ -23,13 +26,8 @@
     height: 35px;
 }
 
+
 /* === END Header === */
-.view__delete-btn {
-    color: rgba(255, 89, 89, 1);
-    background-color: white;
-    border-color: rgba(255, 89, 89, 70%);
-    border-radius: 10px;
-}
 
 /* === Date ===  */
 .date__container {
@@ -42,6 +40,10 @@
     border-radius: 10px;
 
     margin-bottom: 25px;
+}
+
+.date {
+    font-weight: bold;
 }
 
 .card {
@@ -61,4 +63,9 @@
 .card__desc {
     padding: 30px;
     text-align: justify;
+}
+
+.card__list {
+    padding: 20px;
+    margin-left: 30px;
 }

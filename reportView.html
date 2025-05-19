@@ -18,8 +18,8 @@
         <div class="view__header">
             <h1 class="app-header">Report #1</h1>
             <div class="view__header-btns">
-                <button class="view__delete-btn">Delete</button>
-                <button class="view__export-btn">Export</button>
+                <button class="btn-delete">Delete</button>
+                <button class="btn-alt">Export</button>
             </div>
         </div>
 
@@ -38,7 +38,7 @@
                 torquent per conubia nostra inceptos himenaeos.</p>
         </div>
         <div class="card">
-            <p class="card__title">Progress Report</p>
+            <p class="card__title">Workout Feedback</p>
             <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
                 vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
                 diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
@@ -46,7 +46,7 @@
                 torquent per conubia nostra inceptos himenaeos.</p>
         </div>
         <div class="card">
-            <p class="card__title">Progress Report</p>
+            <p class="card__title">Nutrition Feedback</p>
             <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
                 vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
                 diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
@@ -54,13 +54,73 @@
                 torquent per conubia nostra inceptos himenaeos.</p>
         </div>
         <div class="card">
-            <p class="card__title">Progress Report</p>
-            <p class="card__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
-                vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-                diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
-                malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora
-                torquent per conubia nostra inceptos himenaeos.</p>
+            <p class="card__title">Key Take Aways</p>
+            <ol class="card__list">
+                <li>Lorem ipsu dolor sit amet consectetur</li>
+                <li>Lorem ipsu dolor sit amet consectetur</li>
+                <li>Lorem ipsu dolor sit amet consectetur</li>
+            </ol>
         </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <a href="#" class="nav-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                    stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Home
+        </a>
+        <a href="workout.html" class="nav-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20.24 12.24C21.3658 11.1142 21.9983 9.58722 21.9983 7.99504C21.9983 6.40285 21.3658 4.87588 20.24 3.75004C19.1142 2.62419 17.5872 1.9917 15.995 1.9917C14.4028 1.9917 12.8758 2.62419 11.75 3.75004L5 10.5V19H13.5L20.24 12.24Z"
+                    stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16 8L2 22" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 15H9" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Workouts
+        </a>
+        <a href="history.html" class="nav-btn active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="#995c00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M12 6V12L16 14" stroke="#995c00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            History
+        </a>
+        <a href="#" class="nav-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"
+                    stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Messages
+        </a>
+        <a href="nutrition.html" class="nav-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                    stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 8V16" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 12H16" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Nutrition
+        </a>
+        <a href="profile.html" class="nav-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                    stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                    stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Profile
+        </a>
     </div>
 
 </body>
