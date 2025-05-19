@@ -2,80 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Active Workout</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/active-workout.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Workout</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/active-workout.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="active-workout" class="active-workout-container">
-        <div class="workout-header">
-            <button class="back-btn" onclick="history.back()">
-                <img src="images/Left.png" alt="Back">
-            </button>
-            <h1 class="workout-title">Pull Day</h1>
-            <button class="done-btn" onclick="window.location.href='history.html'">
-                <img src="images/Flag.png" alt="Finish">
-                Done
-            </button>
-        </div>
-        
-    <div class="exercise-container"></div><!-- Dynamic content will be injected here -->
-    
-    <button class="add-exercise-btn">ADD EXERCISE</button>    
-    <button class="cancel-btn">CANCEL WORKOUT</button>
-    
-    <div class="bottom-nav">
-    <a href="#" class="nav-btn">
-        <img src= "images/Resources.png" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        Resources
-    </a>
-    <a href="workout.html" class="nav-btn active">
-        <img src="images/Workouts.png" stroke="#995c00" stro ke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        Workouts
-    </a>
-    <a href="history.html" class="nav-btn">
-        <img src="images/History.png" stroke="#995c00" stro ke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        History
-    </a>
-    <a href="chat-dash.html" class="nav-btn">
-        <img src="images/Chat.png" stroke="#995c00" stro ke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        Chat
-    </a>
-    <a href="nutrition.html" class="nav-btn">
-        <img src="images/Nutrition.png" stroke="#995c00" stro ke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        Nutrition
-    </a>
-    <a href="profile.html" class="nav-btn">
-        <img src="images/Profile.png" stroke="#995c00" stro ke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        Profile
-    </a>
+  <div id="active-workout" class="active-workout-container">
+    <div class="workout-header">
+      <button class="back-btn" onclick="history.back()">
+        <img src="images/Left.png" alt="Back">
+      </button>
+      <h1 class="workout-title">Pull Day</h1>
+      <button class="done-btn" onclick="window.location.href='history.html'">
+        <img src="images/Flag.png" alt="Finish">
+        Done
+      </button>
     </div>
 
+    <div class="exercise-container"></div><!-- Dynamic content will be injected here -->
+
+    <button class="add-exercise-btn">ADD EXERCISE</button>
+    <button class="cancel-btn">CANCEL WORKOUT</button>
+
     <script>// Dynamic HTML for each exercise
-    document.addEventListener("DOMContentLoaded", () => {
-    const workout = JSON.parse(localStorage.getItem("activeWorkout"));
-    if (!workout) {
-      document.getElementById("active-workout").innerHTML = "<p>No workout selected.</p>";
-      return;
-    }
+      document.addEventListener("DOMContentLoaded", () => {
+        const workout = JSON.parse(localStorage.getItem("activeWorkout"));
+        if (!workout) {
+          document.getElementById("active-workout").innerHTML = "<p>No workout selected.</p>";
+          return;
+        }
 
-    // Set workout title
-    document.querySelector(".workout-title").textContent = workout.title;
+        // Set workout title
+        document.querySelector(".workout-title").textContent = workout.title;
 
-    const container = document.querySelector(".exercise-container");
-    container.innerHTML = ""; // Clear existing hardcoded content
+        const container = document.querySelector(".exercise-container");
+        container.innerHTML = ""; // Clear existing hardcoded content
 
-    workout.exercises.forEach((exercise, index) => {
-      const exerciseCard = document.createElement("div");
-      exerciseCard.className = "exercise-card";
+        workout.exercises.forEach((exercise, index) => {
+          const exerciseCard = document.createElement("div");
+          exerciseCard.className = "exercise-card";
 
-      
-      exerciseCard.innerHTML = `
+
+          exerciseCard.innerHTML = `
         <div class="exercise-header">
           <h2 class="exercise-name">${exercise.name}</h2>
           <div class="equipment">${exercise.equipment}</div>
@@ -106,29 +79,30 @@
         </div>
       `;
 
-      container.appendChild(exerciseCard);
-    });
-  });
+          container.appendChild(exerciseCard);
+        });
+      });
     </script>
 
     <script> // Delegate click events for check-circle buttons
-   document.addEventListener('click', function(event) {
-    if (event.target.closest('.check-circle')) {
-      const checkCircle = event.target.closest('.check-circle');
-      const setRow = checkCircle.closest('.set-row');
-      setRow.classList.toggle('completed');
+      document.addEventListener('click', function (event) {
+        if (event.target.closest('.check-circle')) {
+          const checkCircle = event.target.closest('.check-circle');
+          const setRow = checkCircle.closest('.set-row');
+          setRow.classList.toggle('completed');
 
-      if (setRow.classList.contains('completed')) {
-        checkCircle.innerHTML = `
+          if (setRow.classList.contains('completed')) {
+            checkCircle.innerHTML = `
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
             <path d="M20 6L9 17L4 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         `;
-      } else {
-        checkCircle.innerHTML = '';
-      }
-    }
-  });
+          } else {
+            checkCircle.innerHTML = '';
+          }
+        }
+      });
     </script>
 </body>
+
 </html>

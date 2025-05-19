@@ -57,6 +57,13 @@
     justify-content: space-around;
 }
 
+@media screen and (max-width: 500px) {
+    .report__card-buttonGroup {
+        gap: 20px;
+    }
+}
+
+
 .report__card-buttonGroup input[type="radio"] {
     /* removes default styling */
     position: absolute;

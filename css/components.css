@@ -63,7 +63,7 @@
 
     cursor: pointer;
 
-    transition: color .3s ease-in, background-color .3s, ease-in, border-color .3s ease-out, box-shadow .3s ease-out;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-out, box-shadow .3s ease-out;
 }
 
 .btn-delete:hover {
@@ -85,7 +85,7 @@
     padding: 3.5px;
     background-color: transparent;
     border: none;
-    
+
 }
 
 .send-btn{

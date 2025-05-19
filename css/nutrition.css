@@ -3,7 +3,7 @@
     padding: 16px;
     padding-bottom: 80px;
     /* Space for bottom nav */
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -132,10 +132,14 @@
     align-items: center;
     padding: 12px;
     border-radius: 8px;
+
+    transition: background-color .3s ease-in, border-color .3s ease-out, box-shadow .4s ease-out;
 }
 
-.meal-item:first-child {
-    background-color: #FFF9F0;
+
+.meal-item:hover {
+    background-color: rgba(255, 189, 89, 30%);
+    box-shadow: 0 0 5px rgba(255, 189, 89, 1)
 }
 
 .meal-icon {
