@@ -117,6 +117,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
 
+    cursor: pointer;
     transition: background-color .3s ease-in, box-shadow .3s ease-out;
 }
 
@@ -130,21 +131,6 @@
     justify-content: space-between;
 }
 
-.report__exportButton {
-    padding: 3.5px 15px 3.5px 15px;
-    border-radius: 8px;
-
-    background-color: white;
-    border-color: rgba(255, 189, 89, 50%);
-    color: #E6AC53;
-
-    transition: color .3s ease-in, border-color .3s ease-out;
-
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -153,11 +139,6 @@
         'opsz' 20;
     vertical-align: middle;
     margin-right: 5px;
-}
-
-.report__exportButton:hover {
-    color: rgba(255, 189, 89, 80%);
-    border-color: #FFBD59;
 }
 
 .report__title {
